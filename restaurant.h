@@ -1,3 +1,5 @@
+#ifndef RESTAURANT_H
+#define RESTAURANT_H
 #include <string>
 #include <iostream>
 
@@ -21,3 +23,5 @@ protected:
     string name;
     string year;
 };
+
+#endif
