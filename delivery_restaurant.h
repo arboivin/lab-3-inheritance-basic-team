@@ -3,7 +3,7 @@
 
 #include "restaurant.h"
 
-class DeliveryRestaurant : Restaurant {
+class DeliveryRestaurant : public Restaurant {
 private:
     int maxDistance;
 public:
@@ -33,7 +33,7 @@ public:
         return *this;
     }
 
-    void print() {
+    void print() override {
         cout << "Name: " << name << "\nMax Distance (Km): " << maxDistance << endl;
     }
 };
