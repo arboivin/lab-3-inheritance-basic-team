@@ -9,6 +9,11 @@ class Restaurant {
 public:
     Restaurant();
 
+    Restaurant(const string& restaurantName) :
+        name(restaurantName),
+        year("")
+    {}
+
     Restaurant(const string& restaurantName, const string& yearEstablished) :
         name(restaurantName),
         year(yearEstablished)

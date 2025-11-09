@@ -9,11 +9,10 @@ private:
 public:
     DeliveryRestaurant();
 
-    DeliveryRestaurant(const string& restaurantName, const string& yearEstablished, int maximumDistance) :
-        maxDistance(maximumDistance)
-    {
-        Restaurant(restaurantName, yearEstablished);
-    }
+    DeliveryRestaurant(const string& name, int maximumDistance) :
+        maxDistance(maximumDistance),
+        Restaurant(name)
+    {}
 
     DeliveryRestaurant(DeliveryRestaurant& other) :
         maxDistance(other.getMaxDistance())
